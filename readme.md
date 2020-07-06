@@ -1,5 +1,5 @@
-Gatsby project on Docker.  
-It was intended for development environment 
+# Gatsby project on Docker.
+Intended for development environment 
 
 **gatsby-cli.sh / gatsby-cli.bat script:**
   
@@ -17,4 +17,5 @@ Gatsby will perform an optimized production build for your site, generating stat
   
 Gatsby starts a local HTML server for testing your built site. Remember to build your site using gatsby build before using this command.
 
-
+###Building local image instead
+Eg.: docker-compose -f docker-compose.yml -f docker-compose.local.yml up gatsby-serve

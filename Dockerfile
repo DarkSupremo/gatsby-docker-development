@@ -11,7 +11,7 @@ RUN set -x \
   git \
   make \
   python3 \
-  autoreconf \
+  autoconf \
   binutils
 
 # Install gatsby cli and cleanup

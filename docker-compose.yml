@@ -1,28 +1,28 @@
 version: "3.3"
 services:
-  gatsby:
-    build: .
+  gatsby-develop:
     ports:
       - "8000:8000"
-    environment:
-      - GIT_AUTHOR_EMAIL=uilton.dev@gmail.com
-      - GIT_COMMITTER_EMAIL=uilton.dev@gmail.com
-      - GIT_AUTHOR_NAME=Uilton Oliveira
-      - GIT_COMMITTER_NAME=DarkSupremo
+    env_file:
+      - git_settings.env
     volumes:
       - .:/site
-
-  gatsby-develop:
-    extends:
-      service: gatsby
     command: gatsby develop --host 0.0.0.0
 
   gatsby-build:
-    extends:
-      service: gatsby
+    ports:
+      - "8000:8000"
+    env_file:
+      - git_settings.env
+    volumes:
+      - .:/site
     command: gatsby build
 
   gatsby-serve:
-    extends:
-      service: gatsby
+    ports:
+      - "8000:8000"
+    env_file:
+      - git_settings.env
+    volumes:
+      - .:/site
     command: gatsby serve --host 0.0.0.0

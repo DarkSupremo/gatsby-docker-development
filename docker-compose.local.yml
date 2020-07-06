@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  gatsby-develop:
+    build: .
+
+  gatsby-build:
+    build: .
+
+  gatsby-serve:
+    build: .

@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  gatsby-develop:
+    image: uilton/gatsby-development:latest
+
+  gatsby-build:
+    image: uilton/gatsby-development:latest
+
+  gatsby-serve:
+    image: uilton/gatsby-development:latest
