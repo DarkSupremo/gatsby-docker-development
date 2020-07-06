@@ -1,6 +1,4 @@
-FROM current-alpine3.12
-# latest tested version:
-# FROM node:14.5.0-alpine3.12
+FROM node:14.5.0-alpine3.12
 
 EXPOSE 8000
 
