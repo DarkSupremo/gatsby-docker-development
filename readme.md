@@ -45,4 +45,4 @@ _Alternatively_: `docker-compose up gatsby-serve`  (docker-compose.yml included 
   
 
 ## Building local image instead
-Eg.: docker-compose -f docker-compose.yml -f docker-compose.local.yml up gatsby-serve
+Eg.: `docker-compose -f docker-compose.yml -f docker-compose.local.yml up gatsby-serve`
